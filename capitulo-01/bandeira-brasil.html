@@ -13,24 +13,25 @@
   var pincel = tela.getContext('2d');
 
   pincel.fillStyle = 'green';
-  pincel.fillRect(0, 0, 200, 400);
-
-  pincel.fillStyle = 'white';
-  pincel.fillRect(200, 0, 200, 400);
-
-  pincel.fillStyle = 'red';
-  pincel.fillRect(400, 0, 200, 400);
+  pincel.fillRect(0, 0, 600, 400);
 
   pincel.fillStyle = 'yellow';
   pincel.beginPath();
-  pincel.moveTo(300, 200);
-  pincel.lineTo(200, 400);
-  pincel.lineTo(400, 400);
+  pincel.moveTo(300, 30);
+  pincel.lineTo(30, 200);
+  pincel.lineTo(570, 200);
   pincel.fill();
 
-  pincel.fillStyle = 'blue';
+  pincel.fillStyle = 'yellow';
   pincel.beginPath();
-  pincel.arc(300, 200, 50, 0, 2*Math.PI);
+  pincel.moveTo(300, 370);
+  pincel.lineTo(30, 200);
+  pincel.lineTo(570, 200);
+  pincel.fill();
+
+  pincel.fillStyle = "darkblue";
+  pincel.beginPath();
+  pincel.arc(300, 200, 120, 0, 2 * Math.PI);
   pincel.fill();
 
 </script>

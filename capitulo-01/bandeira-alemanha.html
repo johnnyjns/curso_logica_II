@@ -1,0 +1,24 @@
+<html lang="pt-BR">
+<meta charset="utf-8">
+<style>
+  body{
+    background-color: lightgray;
+  }
+</style>
+
+<canvas id="tela" width="600" height="400"></canvas>
+
+<script>
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+
+  pincel.fillStyle = 'black';
+  pincel.fillRect(0, 0, 600, 134);
+
+  pincel.fillStyle = 'red';
+  pincel.fillRect(0, 134, 600, 133);
+
+  pincel.fillStyle = 'yellow';
+  pincel.fillRect(0, 267, 600, 133);
+
+</script>
