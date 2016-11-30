@@ -7,10 +7,13 @@
 </style>
 
 <canvas id="tela" width="600" height="400"></canvas>
+<br>
+Escolha uma cor <input type="color">
 
 <script>
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
+    var input = document.querySelector('input');
 
     pincel.fillStyle = 'lightgray';
     pincel.fillRect(0, 0, 600, 400);
@@ -22,7 +25,7 @@
         if(desenha) {
             var x = evento.pageX - tela.offsetLeft;
             var y = evento.pageY - tela.offsetTop;
-            pincel.fillStyle = 'blue';
+            pincel.fillStyle = input.value;
             pincel.beginPath();
             pincel.arc(x, y, raio, 0, 2 * 3.14);
             pincel.fill();
@@ -44,4 +47,5 @@
     }
 
     console.log('Estuda Johnny!!!');
+    console.log(input);
 </script>
